@@ -1,5 +1,8 @@
 'use strict';
 
-module.exports.index = require('./root.js');
-module.exports.auth = require('./auth.js');
-module.exports.donations = require('./donations.js');
+module.exports = {
+  auth      : require('./auth.js'),
+  donations : require('./donations.js'),
+  index     : require('./root.js'),
+  proxy     : require('./proxy.js')
+}
